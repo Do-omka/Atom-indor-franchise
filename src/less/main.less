@@ -1,0 +1,29 @@
+* {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+head,
+script {
+  display: none;
+}
+html {
+  font-size: 1px;
+  height: 100%;
+}
+
+body {
+  font-size: 16rem;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
