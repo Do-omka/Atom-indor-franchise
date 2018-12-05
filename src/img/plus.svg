@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>EB39730E-9EAA-448C-8438-315338DFA8A5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="96.4640535%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2948FF" offset="0%"></stop>
+            <stop stop-color="#396AFC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Франшиза|Главная" transform="translate(-165.000000, -479.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="5659"></rect>
+            <g id="Plus" transform="translate(165.000000, 479.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                <g id="Layer_1">
+                    <path d="M14.0462963,7.15566038 C14.0462963,7.81822152 13.5162474,8.34827044 12.8536862,8.34827044 L8.08324598,8.34827044 L8.08324598,12.8536862 C8.08324598,13.5162474 7.55319706,14.0462963 6.89063592,14.0462963 C6.22807477,14.0462963 5.69802586,13.5162474 5.69802586,12.8536862 L5.69802586,8.34827044 L1.19261006,8.34827044 C0.530048917,8.34827044 0,7.81822152 0,7.15566038 C0,6.49309923 0.530048917,5.96305031 1.19261006,5.96305031 L5.69802586,5.96305031 L5.69802586,1.19261006 C5.69802586,0.530048917 6.22807477,0 6.89063592,0 C7.55319706,0 8.08324598,0.530048917 8.08324598,1.19261006 L8.08324598,5.96305031 L12.8536862,5.96305031 C13.5162474,5.96305031 14.0462963,6.49309923 14.0462963,7.15566038 Z" id="XMLID_933_"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
