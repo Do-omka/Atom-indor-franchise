@@ -117,7 +117,6 @@
 			<div class='container'>
 				<div class='row'>
 					<div class='form col-xl-6'>
-						<button type='button' class='close'></button>
 						//= templates/recall_form.html
 					</div>
 					<div class='col-xl-6'>
@@ -206,6 +205,41 @@
 		
 		//= templates/cities.html
 		
+		<section id='map'></section>
+		
+		<section id='contacts'>
+			<div class='container'>
+				<h2>Эксклюзивным представителем по городу может быть только одна компания</h2>
+				<div class='row'>
+					<div class='agencies col-sm-6'>
+						
+						<div class='item'>
+							<h3>Представительство в г.Волгоград</h3>
+							<p>ул. Пугачевская, 7г, оф.76</p>
+							<ul class='arrow'>
+								<li>Финансовый отдел</li>
+								<li>Отдел IT разработки</li>
+							</ul>
+						</div>
+						
+						<div class='item'>
+							<h3>Представительство в г.Ростов-на-Дону</h3>
+							<p>ул. буровая 46, офис 24</p>
+							<ul class='arrow'>
+								<li>Отдел по работе с федеральными рекламодателями</li>
+								<li>Отдел развития партнерской сети</li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					<div class='col-sm-6'>
+						<div id='small_map'></div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
 	</main>
 	
 	<footer>
@@ -230,6 +264,11 @@
 			</div>
 		</div>
 	</footer>
+	
+	<section class='popup' id='recall_popup'>
+		<button type='button' class='close'></button>
+		//= templates/recall_form.html
+	</section>
 	
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
