@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 *::before,
@@ -31,6 +32,7 @@ body {
   font-family: FuturaPT;
   color: rgb(55, 51, 77);
   line-height: 1.25;
+  hyphens: auto;
 }
 
 main {
@@ -54,16 +56,17 @@ body > {
     background-color: rgb(255, 255, 255);
     .row {
       > * {
+        flex-direction: row;
         align-items: center;
         margin-bottom: 30px;
       }
     }
     nav {
-      flex-direction: row;
       justify-content: space-around;
       font-size: 20rem;
     }
     .number {
+      flex-direction: column;
       align-items: flex-end;
       span {
         font-family: FuturaPT-Demi;
@@ -86,9 +89,15 @@ body > {
 }
 
 h2 {
-  align-items: center;
+  text-align: center;
   font-weight: bold;
   font-size: 36rem;
+  margin-bottom: 30rem;
+}
+
+h3 {
+  font-family: FuturaPT-Demi;
+  font-size: 26rem;
 }
 
 .btn {
@@ -102,9 +111,112 @@ h2 {
   
   &:hover,
   &:active {
-      background-image: linear-gradient(to top, rgb(4, 28, 169), rgb(2, 60, 234));
+    background-image: linear-gradient(to top, rgb(4, 28, 169), rgb(2, 60, 234));
   }
 }
+
 .remark {
   color: rgb(161, 161, 161);
+}
+
+.plus {
+  flex-direction: row;
+  font-family: FuturaPT-Demi;
+  font-size: 20rem;
+  
+  &::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-image: url(../img/plus.svg);
+    margin-right: 5px;
+  }
+}
+
+.download {
+  flex-direction: row;
+  margin-bottom: 30rem;
+  .remark {
+    align-self: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.features {
+  margin-bottom: 30rem;
+  li {
+    font-size: 16rem;
+    font-weight: 500;
+    
+    &::before {
+      content: '';
+      width: 35px;
+      height: 35px;
+      margin-bottom: 10px;
+    }
+    &.earn::before {
+      background-image: url(../img/earn.svg);
+    }
+    &.earn::before {
+      background-image: url(../img/earn.svg);
+    }
+    &.earn::before {
+      background-image: url(../img/earn.svg);
+    }
+  }
+}
+
+.clients {
+  background-color: rgb(247, 250, 255);
+}
+
+#about {
+  li {
+    align-items: center;
+    margin-bottom: 50rem;
+    
+  }
+  .left {
+    text-align: right;
+    font-size: 70rem;
+    font-weight: bold;
+    color: rgb(55, 66, 250);
+    
+    @media @xl {
+      font-size: 50rem;
+    }
+  }
+  .right {
+    max-width: 285px;
+    text-align: left;
+    font-size: 24rem;
+  }
+}
+#cities {
+  font-size: 24rem;
+}
+
+.mask {
+  position: relative;
+  padding-bottom: 56.25%;
+  // height: 0;
+  overflow: hidden;
+  
+  border-radius: 15px;
+  box-shadow: 0 2px 4px 0 rgba(190, 190, 190, 0.5);
+  background-color: rgb(247, 250, 255);
+  margin-bottom: 30rem;
+  
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.watchyaget {
 }
