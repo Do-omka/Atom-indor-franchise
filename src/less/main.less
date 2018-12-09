@@ -110,6 +110,12 @@ body > {
 				flex-direction: row;
 				align-items: center;
 				margin-bottom: 30rem;
+				
+				@media @xl {
+					&:nth-child(-n+2) {
+						justify-content: center;
+					}
+				}
 			}
 		}
 		
