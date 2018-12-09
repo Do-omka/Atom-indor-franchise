@@ -66,6 +66,7 @@ button {
 
 p {
 	hyphens: auto;
+	margin-bottom: 0.5em;
 }
 
 h2 {
@@ -392,7 +393,7 @@ ul.cities {
 	li {
 		flex-direction: row;
 		align-items: center;
-		margin-bottom: 1.5rem;
+		margin-bottom: 5rem;
 		margin-right: 20rem;
 		
 		&:before {
@@ -401,6 +402,38 @@ ul.cities {
 			height: 12px;
 			background-image: svg-load('../img/city.svg');
 			margin-right: 10px;
+		}
+	}
+}
+
+#cases {
+	.item {
+		border-radius: 15px;
+	  box-shadow: 0 3px 4px 0 rgba(190, 190, 190, 0.5);
+	  background-color: rgb(255, 255, 255);
+		padding: 20rem;
+		font-size: 18rem;
+		
+		img {
+			padding: 10px;
+		}
+		
+		ul {
+			font-size: 16rem;
+		}
+		
+		.profit {
+			align-items: center;
+			margin-top: 20rem;
+			
+			p {
+				font-size: 20rem;
+			}
+			
+			b {
+				font-size: 26px;
+				font-weight: bold;
+			}
 		}
 	}
 }
