@@ -368,3 +368,39 @@ img[alt="img"] {
 		}
 	}
 }
+
+ul.arrow {
+	li {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 1em;
+		
+		&:before {
+			content: '';
+			width: 9px;
+			height: 14px;
+			background-image: svg-load('../img/arrow.svg');
+			margin-right: 10px;
+		}
+	}
+}
+
+ul.cities {
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	li {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 1.5rem;
+		margin-right: 20rem;
+		
+		&:before {
+			content: '';
+			width: 9px;
+			height: 12px;
+			background-image: svg-load('../img/city.svg');
+			margin-right: 10px;
+		}
+	}
+}
