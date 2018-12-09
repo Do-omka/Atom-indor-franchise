@@ -55,7 +55,30 @@ body {
   font-family: FuturaPT;
   color: rgb(55, 51, 77);
   line-height: 1.25;
-  hyphens: auto;
+}
+
+a[href],
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+p {
+	hyphens: auto;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36rem;
+  margin-bottom: 30rem;
+}
+
+h3 {
+  font-family: FuturaPT-Demi;
+  font-size: 26rem;
+	margin-bottom: 20rem;
 }
 
 main {
@@ -111,18 +134,6 @@ body > {
   }
 }
 
-h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 36rem;
-  margin-bottom: 30rem;
-}
-
-h3 {
-  font-family: FuturaPT-Demi;
-  font-size: 26rem;
-}
-
 .btn {
   align-items: center;
   padding: 17rem 40rem;
@@ -158,6 +169,7 @@ h3 {
     width: 15px;
     background-image: svg-load('../img/plus.svg');
     margin-right: 5px;
+		align-self: center;
   }
 }
 
@@ -175,6 +187,8 @@ h3 {
 .features {
   margin-bottom: 30rem;
   li {
+		// align-items: center;
+		text-align: center;
     font-size: 16rem;
     font-weight: 500;
     
