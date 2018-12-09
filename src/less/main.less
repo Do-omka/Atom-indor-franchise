@@ -24,37 +24,38 @@
 @xl: ~'(max-width: 720px)';
 
 * {
-  all: unset;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  flex-shrink: 0;
+	all: unset;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	flex-shrink: 0;
 }
 
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 head,
 script {
-  display: none;
+	display: none;
 }
 
 html {
-  height: 100%;
-  font-size: 1px;
-  @media @xl {
-    font-size: 0.8px;
-  }
+	height: 100%;
+	font-size: 1px;
+	
+	@media @xl {
+		font-size: 0.8px;
+	}
 }
 
 body {
-  height: 100%;
-  font-size: 16rem;
-  font-family: FuturaPT;
-  color: rgb(55, 51, 77);
-  line-height: 1.25;
+	height: 100%;
+	font-size: 16rem;
+	font-family: FuturaPT;
+	color: rgb(55, 51, 77);
+	line-height: 1.25;
 }
 
 a[href],
@@ -70,84 +71,84 @@ p {
 }
 
 h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 36rem;
-  margin-bottom: 30rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36rem;
+	margin-bottom: 30rem;
 }
 
 h3 {
-  font-family: FuturaPT-Demi;
-  font-size: 26rem;
+	font-family: FuturaPT-Demi;
+	font-size: 26rem;
 	margin-bottom: 20rem;
 }
 
 main {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .row {
-  flex-direction: row;
+	flex-direction: row;
 }
 
 body > {
-  header {
-    box-shadow: 0 2px 4px 0 rgba(225, 225, 225, .5);
-  }
-  footer {
-    box-shadow: inset 0 1px 3px 0 rgba(190, 190, 190, .5);
-  }
-  header,
-  footer {
-    padding-top: 30px;
-    background-color: rgb(255, 255, 255);
-    .row {
-      > * {
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 30px;
-      }
-    }
-    nav {
-      justify-content: space-around;
-      font-size: 20rem;
-    }
-    .number {
-      flex-direction: column;
-      align-items: flex-end;
-      span {
-        font-family: FuturaPT-Demi;
-        font-size: 28rem;
-        color: rgb(49, 64, 174);
-        margin-bottom: .5em;
-      }
-      .recall {
-        font-size: 16rem;
-        color: rgb(107, 107, 107);
-        text-decoration: underline;
-      }
-    }
-  }
-  section {
-    padding-top: 60rem;
-    padding-bottom: 60rem;
-  }
+	header {
+		box-shadow: 0 2px 4px 0 rgba(225, 225, 225, .5);
+	}
+	footer {
+		box-shadow: inset 0 1px 3px 0 rgba(190, 190, 190, .5);
+	}
+	header,
+	footer {
+		padding-top: 30px;
+		background-color: rgb(255, 255, 255);
+		.row {
+			> * {
+				flex-direction: row;
+				align-items: center;
+				margin-bottom: 30px;
+			}
+		}
+		nav {
+			justify-content: space-around;
+			font-size: 20rem;
+		}
+		.number {
+			flex-direction: column;
+			align-items: flex-end;
+			span {
+				font-family: FuturaPT-Demi;
+				font-size: 28rem;
+				color: rgb(49, 64, 174);
+				margin-bottom: .5em;
+			}
+			.recall {
+				font-size: 16rem;
+				color: rgb(107, 107, 107);
+				text-decoration: underline;
+			}
+		}
+	}
+	section {
+		padding-top: 60rem;
+		padding-bottom: 60rem;
+	}
 }
 
 .btn {
-  align-items: center;
+	align-items: center;
 	text-align: center;
 	color: white;
-  font-weight: bold;
-  padding: 17rem 40rem;
-  border-radius: 30px;
-  cursor: pointer;
-  background-image: linear-gradient(to top, rgb(41, 72, 255), rgb(57, 106, 252));
-  
-  &:hover,
-  &:active {
-    background-image: linear-gradient(to top, rgb(4, 28, 169), rgb(2, 60, 234));
-  }
+	font-weight: bold;
+	padding: 17rem 40rem;
+	border-radius: 30px;
+	cursor: pointer;
+	background-image: linear-gradient(to top, rgb(41, 72, 255), rgb(57, 106, 252));
+	
+	&:hover,
+	&:active {
+		background-image: linear-gradient(to top, rgb(4, 28, 169), rgb(2, 60, 234));
+	}
 }
 
 .logo img {
@@ -156,111 +157,112 @@ body > {
 }
 
 .remark {
-  color: rgb(161, 161, 161);
+	color: rgb(161, 161, 161);
 }
 
 .plus {
-  flex-direction: row;
-  font-family: FuturaPT-Demi;
-  font-size: 20rem;
-  
-  &::before {
-    content: '';
-    height: 15px;
-    width: 15px;
-    background-image: svg-load('../img/plus.svg');
-    margin-right: 5px;
+	flex-direction: row;
+	font-family: FuturaPT-Demi;
+	font-size: 20rem;
+	
+	&::before {
+		content: '';
+		height: 15px;
+		width: 15px;
+		background-image: svg-load('../img/plus.svg');
+		margin-right: 5px;
 		align-self: center;
-  }
+	}
 }
 
 .download {
-  flex-direction: row;
-  margin-bottom: 30rem;
-  .remark {
-    align-self: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	flex-direction: row;
+	margin-bottom: 30rem;
+	.remark {
+		align-self: center;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .features {
 	margin-top: 40rem;
-  margin-bottom: 30rem;
+	margin-bottom: 30rem;
 	
-  li {
-    font-size: 16rem;
-    font-weight: 500;
+	li {
+		font-size: 16rem;
+		font-weight: 500;
 		margin-bottom: 1em;
 		
-    &::before {
-      content: '';
-      width: 35px;
-      height: 35px;
-      margin-bottom: 10px;
-    }
-    &.earn::before {
-      background-image: svg-load('../img/earn.svg');
-    }
-    &.time::before {
-      background-image: svg-load('../img/time.svg');
-    }
-    &.refund::before {
+		&::before {
+			content: '';
+			width: 35px;
+			height: 35px;
+			margin-bottom: 10px;
+		}
+		&.earn::before {
+			background-image: svg-load('../img/earn.svg');
+		}
+		&.time::before {
+			background-image: svg-load('../img/time.svg');
+		}
+		&.refund::before {
 			width: 25px;
-      background-image: svg-load('../img/refund.svg');
-    }
-  }
+			background-image: svg-load('../img/refund.svg');
+		}
+	}
 }
 
 .clients {
-  background-color: rgb(247, 250, 255);
+	background-color: rgb(247, 250, 255);
 }
 
 #about {
-  li {
-    align-items: center;
-    margin-bottom: 50rem;
-    
-  }
-  .left {
-    text-align: right;
-    font-size: 70rem;
-    font-weight: bold;
-    color: rgb(55, 66, 250);
-    
-    @media @xl {
-      font-size: 50rem;
-    }
-  }
-  .right {
-    max-width: 285px;
-    text-align: left;
-    font-size: 24rem;
-  }
+	li {
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 50rem;
+		
+	}
+	.left {
+		text-align: right;
+		font-size: 70rem;
+		font-weight: bold;
+		color: rgb(55, 66, 250);
+		
+		@media @xl {
+			font-size: 50rem;
+		}
+	}
+	.right {
+		max-width: 285px;
+		text-align: left;
+		font-size: 24rem;
+	}
 }
 #cities {
-  font-size: 24rem;
+	font-size: 24rem;
 }
 
 .mask {
-  position: relative;
-  padding-bottom: 56.25%;
-  // height: 0;
-  overflow: hidden;
-  
-  border-radius: 15px;
-  box-shadow: 0 2px 4px 0 rgba(190, 190, 190, .5);
-  background-color: rgb(247, 250, 255);
-  margin-bottom: 30rem;
-  
-  > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+	position: relative;
+	padding-bottom: 56.25%;
+	// height: 0;
+	overflow: hidden;
+	
+	border-radius: 15px;
+	box-shadow: 0 2px 4px 0 rgba(190, 190, 190, .5);
+	background-color: rgb(247, 250, 255);
+	margin-bottom: 30rem;
+	
+	> * {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .watchyaget {
@@ -288,7 +290,7 @@ img[alt="img"] {
 	&.active {
 		display: flex;
 	}
-
+	
 	justify-content: center;
 	z-index: 3;
 	position: fixed;
@@ -407,15 +409,15 @@ ul.cities {
 
 b {
 	font-size: 36px;
-  font-weight: bold;
+	font-weight: bold;
 	margin-bottom: 20rem;
 }
 #cases {
 	.item {
 		font-size: 18rem;
 		border-radius: 15px;
-	  box-shadow: 0 3px 4px 0 rgba(190, 190, 190, .5);
-	  background-color: rgb(255, 255, 255);
+		box-shadow: 0 3px 4px 0 rgba(190, 190, 190, .5);
+		background-color: rgb(255, 255, 255);
 		padding: 20rem;
 		margin-bottom: 40rem;
 		
@@ -442,5 +444,39 @@ b {
 				font-weight: bold;
 			}
 		}
+	}
+}
+
+#map {
+	width: 100%;
+	height: 510rem;
+	background: grey url(../img/map.png) center center no-repeat;
+	background-size: contain;
+	padding: 0;
+	
+	@media (max-width: 1200px) {
+		height: 250px;
+	}
+}
+
+#contacts {
+	font-size: 24px;
+	
+	h3 {
+		font-family: FuturaPT;
+		font-size: 26px;
+		font-weight: 500;
+		margin-bottom: 20rem;
+	}
+}
+
+#small_map {
+	width: 100%;
+	height: 500px;
+	background: grey url(../img/small_map.png) center center no-repeat;
+	background-size: contain;
+	
+	@media (max-width: 1200px) {
+		height: 240px;
 	}
 }

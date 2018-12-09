@@ -73,8 +73,8 @@ function minjs (cb) {
 }
 
 function minimg () {
-	del(['docs/imgs'])
-	return gulp.src('src/img/*')
+	// del(['docs/imgs'])
+	return gulp.src('src/img/*map.png')
 		.pipe(imgmin())
 		.pipe(gulp.dest('docs/img'))
 }

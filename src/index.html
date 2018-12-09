@@ -190,13 +190,13 @@
 		
 		//= templates/cities.html
 		
-		<section id='map'></section>
+		<section id='map' class='map'></section>
 		
 		<section id='contacts'>
 			<div class='container'>
 				<h2>Эксклюзивным представителем по городу может быть только одна компания</h2>
 				<div class='row'>
-					<div class='agencies col-sm-6'>
+					<div class='agencies col-sm-5'>
 						
 						<div class='item'>
 							<h3>Представительство в г.Волгоград</h3>
@@ -218,8 +218,8 @@
 						
 					</div>
 					
-					<div class='col-sm-6'>
-						<div id='small_map'></div>
+					<div class='col-sm-7'>
+						<div id='small_map' class='map'></div>
 					</div>
 					
 				</div>
@@ -240,6 +240,10 @@
 			
 		</div>
 	</section>
+	
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1fff339dfee9725be75194dc28de39498567fa28dc95175a6a454bb9aac94cc8&amp;lang=ru_RU&amp;id=map"></script>
+	
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A60b620dfd215e8c9a8382e5ef1cec2068d854a52da904041510034c01f411037&amp;lang=ru_RU&amp;id=small_map"></script>
 	
 	<script type='text/javascript' src='js/main.js'></script>
 </body>
