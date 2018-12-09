@@ -21,7 +21,7 @@
 	font-weight: 500;
 }
 
-@xl: ~'(max-width: 1200px)';
+@xl: ~'(max-width: 720px)';
 
 * {
   all: unset;
@@ -186,13 +186,14 @@ body > {
 }
 
 .features {
+	margin-top: 40rem;
   margin-bottom: 30rem;
+	
   li {
-		// align-items: center;
-		text-align: center;
     font-size: 16rem;
     font-weight: 500;
-    
+		margin-bottom: 1em;
+		
     &::before {
       content: '';
       width: 35px;
@@ -200,13 +201,14 @@ body > {
       margin-bottom: 10px;
     }
     &.earn::before {
-      background-image: url(../img/earn.svg);
+      background-image: svg-load('../img/earn.svg');
     }
-    &.earn::before {
-      background-image: url(../img/earn.svg);
+    &.time::before {
+      background-image: svg-load('../img/time.svg');
     }
-    &.earn::before {
-      background-image: url(../img/earn.svg);
+    &.refund::before {
+			width: 25px;
+      background-image: svg-load('../img/refund.svg');
     }
   }
 }
@@ -269,6 +271,15 @@ body > {
 	margin-bottom: 30rem;
 	img {
 		align-self: flex-start;
+	}
+}
+
+img[alt="img"] {
+	width: 100%;
+	height: auto;
+	
+	@media @xl {
+		display: none;
 	}
 }
 
