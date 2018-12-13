@@ -158,9 +158,8 @@ body > {
 }
 
 .btn {
-	width: 350px;
-	min-width: auto;
-	flex-shrink: 1;
+	width: 100%;
+	max-width: 350px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -208,6 +207,10 @@ body > {
 .download {
 	flex-direction: row;
 	margin-bottom: 30rem;
+	
+	.btn {
+		flex-shrink: 1;
+	}
 	
 	.remark {
 		align-self: center;
