@@ -354,31 +354,32 @@ img[alt="img"] {
 		height: 15px;
 		opacity: .5;
 		cursor: pointer;
+		
 		&:hover {
 			opacity: 1;
 		}
+		
 		&:before,
 		&:after {
 			position: absolute;
-			
 			content: ' ';
 			height: 2px;
-			width: 15px;
-			background-color: #333;
+			width: 20px;
+			background-color: #9b9b9b;
 		}
 		&:before {
+			top: 50%;
 			left: 50%;
-			transform: translate(-50%, 0) rotate(45deg);
+			transform: translate(-50%, -50%) rotate(45deg);
 		}
 		&:after {
+			top: 50%;
 			right: 50%;
-			transform: translate(50%, 0) rotate(-45deg);
+			transform: translate(50%, -50%) rotate(-45deg);
 		}
 	}
-	
-	
 }
-
+	
 .form {
 	flex-basis: auto;
 	position: relative;
