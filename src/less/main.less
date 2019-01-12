@@ -455,10 +455,11 @@ ul.cities {
 }
 
 b {
-	font-size: 36px;
+	font-size: 36re,;
 	font-weight: bold;
 	margin-bottom: 20rem;
 }
+
 #cases {
 	.item {
 		font-size: 18rem;
@@ -499,6 +500,98 @@ b {
 				}
 			}
 		}
+	}
+}
+
+.vk {
+	font-size: 0;
+	height: 17px;
+	width: 17px;
+	background-image: svg-load('../img/vk.svg');
+	align-self: center;
+}
+
+.partners_feedback {
+	.block {
+		margin-bottom: 30rem;
+	}
+	
+	.item {
+		height: 100%;
+		padding: 0;
+		font-size: 18rem;
+		border-radius: 15px;
+		box-shadow: 0 3px 4px 0 rgba(190, 190, 190, .5);
+		background-color: rgb(255, 255, 255);
+		
+		&:hover {
+			box-shadow: 0 6px 14px 4px rgba(190, 190, 190, 0.5);
+		}
+		
+		
+		> * {
+			padding: 20rem;
+			padding-bottom: 0;
+		}
+	}
+	
+	.partner_card {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 30rem;
+		
+		.avatar {
+			width: 100px;
+			height: 100px;
+			border-radius: 15px;
+			box-shadow: 0 3px 4px 0 rgba(190, 190, 190, 0.5);
+			margin-right: 10rem;
+			object-fit: cover;
+		}
+		
+		.person {
+			// margin-bottom: 30rem;
+			
+			.name {
+				flex-direction: row;
+				font-family: FuturaPT-Demi;
+				font-size: 20rem;
+				color: rgb(55, 51, 77);
+				margin-bottom: 10rem;
+				
+				span {
+					margin-right: 10rem;
+				}
+			}
+			
+			.contacts {
+				font-family: FuturaPT;
+				font-size: 16rem;
+				line-height: 1.38;
+				color: rgb(155, 155, 155);
+			}
+		}
+	}
+	
+	p {
+		flex-grow: 1;
+		b {
+			font-family: FuturaPT-Demi;
+			margin-bottom: 0;
+		}
+	}
+	
+	.profit {
+		border: 5px solid #006df0;
+		border-radius: 0 0 15px 15px;
+		
+		b:hover {
+			color: rgb(45, 80, 254);
+		}
+	}
+	
+	.btn {
+		align-self: center;
 	}
 }
 
