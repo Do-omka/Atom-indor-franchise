@@ -3,22 +3,7 @@ function findAncestor (el, cls) {
 	return el
 }
 
-window.addEventListener('resize', (e)=> {
-	
-	// fixed header margin size change
-	document.querySelector('body').style.paddingTop = getComputedStyle(document.querySelector('body > header')).getPropertyValue('height')
-	
-})
-
 document.addEventListener('DOMContentLoaded', (e)=> {
-	
-	// fixed header
-	document.querySelector('body').style.paddingTop = getComputedStyle(document.querySelector('body > header')).getPropertyValue('height')
-	
-	document.querySelector('body > header').style.position = 'fixed'
-	document.querySelector('body > header').style.zIndex = '2'
-	document.querySelector('body > header').style.top = '0'
-	document.querySelector('body > header').style.width = '100%'
 	
 	// show more partners' feedback
 	document.querySelector('.partners_feedback .show_more').addEventListener('click', (e)=> {
