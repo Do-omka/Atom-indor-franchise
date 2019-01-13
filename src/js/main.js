@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', (e)=> {
 	document.querySelector('body > header').style.top = '0'
 	document.querySelector('body > header').style.width = '100%'
 	
+	// show more partners' feedback
+	document.querySelector('.partners_feedback .show_more').addEventListener('click', (e)=> {
+		document.querySelector('.partners_feedback').classList.add('active');
+	})
+	
 	// recall popup
 	let recall = document.querySelectorAll('.recall')
 	for (let i = 0; i < recall.length; i++) {

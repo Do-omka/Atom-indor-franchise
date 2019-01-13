@@ -512,8 +512,32 @@ b {
 }
 
 .partners_feedback {
+	
+	&.active {
+		.block:nth-child(n+4) {
+			visibility: visible;
+			opacity: 1;
+			transform: none;
+			height: auto;
+		}
+		
+		.btn {
+			display: none;
+		}
+	}
+	
 	.block {
 		margin-bottom: 30rem;
+		transition: all .5s;
+		
+		&:nth-child(n+4) {
+			visibility: hidden;
+			opacity: 0;
+			transform: translateY(20%);
+			height: 0;
+		}
+		
+		
 	}
 	
 	.item {
